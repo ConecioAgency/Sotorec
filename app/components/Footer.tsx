@@ -81,8 +81,7 @@ export default function Footer() {
         </button>
       </div>
       <div className="mt-4 text-center text-xs text-gray-500">
-        Site créé par 
-        <a 
+        Site créé par<a 
           href="https://www.conecio.com" 
           target="_blank" 
           rel="noopener noreferrer" 
@@ -97,9 +96,10 @@ export default function Footer() {
           Conecio Agency
         </a>
         &nbsp;– Digital Marketing Agency
-      </div>
-      <div className="text-center text-xs text-gray-400 mt-1">
-        &copy; {new Date().getFullYear()} Sotorec SARL. Tous droits réservés.
+        <br />
+        <span className="text-center text-xs text-gray-400 mt-1 block">
+          &copy; {new Date().getFullYear()} Sotorec SARL. Tous droits réservés.
+        </span>
       </div>
     </footer>
   );
