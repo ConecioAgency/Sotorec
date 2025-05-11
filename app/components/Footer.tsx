@@ -80,6 +80,24 @@ export default function Footer() {
           ↑
         </button>
       </div>
+      <div className="mt-4 text-center text-xs text-gray-500">
+        Site créé par 
+        <a 
+          href="https://www.conecio.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="font-semibold bg-gradient-to-r from-primary-500 via-pink-400 to-orange-400 bg-clip-text text-transparent hover:text-orange-400 transition duration-300 underline underline-offset-2 hover:brightness-125"
+          style={{
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+            WebkitTextFillColor: 'transparent',
+          }}
+        >
+          Conecio Agency
+        </a> 
+        – Digital Marketing Agency
+      </div>
     </footer>
   );
 } 

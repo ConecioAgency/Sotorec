@@ -118,12 +118,12 @@ export default function Navbar() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white z-[100] fixed top-20 left-0 w-full shadow-lg"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="md:hidden bg-white/95 z-[200] fixed top-0 left-0 w-full h-screen shadow-2xl flex flex-col"
           >
-            <div className="container mx-auto px-4 py-4">
+            <div className="container mx-auto px-4 py-4 flex-1 flex flex-col justify-center">
               <div className="flex flex-col space-y-4">
                 {navItems.map((item) => (
                   <Link
