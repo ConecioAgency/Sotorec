@@ -49,7 +49,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-[100] transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
@@ -98,19 +98,17 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden z-[110]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Ouvrir le menu mobile"
           >
             <div className="w-6 h-6 flex flex-col justify-around">
-              <span className={`block w-full h-0.5 bg-current transform transition-all duration-300 ${
-                isScrolled ? 'bg-gray-900' : 'bg-white'
-              } ${isMobileMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
-              <span className={`block w-full h-0.5 bg-current transition-all duration-300 ${
-                isScrolled ? 'bg-gray-900' : 'bg-white'
-              } ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-full h-0.5 bg-current transform transition-all duration-300 ${
-                isScrolled ? 'bg-gray-900' : 'bg-white'
-              } ${isMobileMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
+              <span className={`block w-full h-0.5 bg-black transform transition-all duration-300 ${
+                isMobileMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
+              <span className={`block w-full h-0.5 bg-black transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-0' : ''}`} />
+              <span className={`block w-full h-0.5 bg-black transform transition-all duration-300 ${
+                isMobileMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`} />
             </div>
           </button>
         </div>
@@ -123,7 +121,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white"
+            className="md:hidden bg-white z-[100] fixed top-20 left-0 w-full shadow-lg"
           >
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
