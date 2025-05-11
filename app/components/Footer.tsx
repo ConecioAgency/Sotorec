@@ -95,8 +95,11 @@ export default function Footer() {
           }}
         >
           Conecio Agency
-        </a> 
-        – Digital Marketing Agency
+        </a>
+        &nbsp;– Digital Marketing Agency
+      </div>
+      <div className="text-center text-xs text-gray-400 mt-1">
+        &copy; {new Date().getFullYear()} Sotorec SARL. Tous droits réservés.
       </div>
     </footer>
   );

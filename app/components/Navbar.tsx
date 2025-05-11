@@ -63,7 +63,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-[100] transition-all duration-300 ${
+      className={`fixed w-full z-[9999] transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >

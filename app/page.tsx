@@ -107,7 +107,7 @@ export default function Home() {
       {/* Bouton vertical flottant partenaire digital */}
       <button
         onClick={() => setDigitalModalOpen(true)}
-        className="fixed top-1/2 right-0 z-50 px-4 py-3 rounded-l-2xl bg-orange-500 text-white font-bold shadow-lg hover:bg-orange-600 transition-colors duration-200 text-xs tracking-widest rotate-[-90deg] origin-bottom-right"
+        className="fixed top-1/2 right-0 z-[9999] px-4 py-3 rounded-l-2xl bg-orange-500 text-white font-bold shadow-lg hover:bg-orange-600 transition-colors duration-200 text-xs tracking-widest rotate-[-90deg] origin-bottom-right"
         style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', transform: 'translateY(-50%)' }}
       >
         DIGITAL MARKETING
