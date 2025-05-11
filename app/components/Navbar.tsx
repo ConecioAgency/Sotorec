@@ -140,6 +140,14 @@ export default function Navbar() {
             exit={{ opacity: 0 }}
             className="md:hidden bg-white/95 z-[200] fixed top-0 left-0 w-full h-screen shadow-2xl flex flex-col"
           >
+            {/* Bouton Fermer (croix) en haut à droite */}
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full text-2xl text-primary-700 hover:text-orange-400 hover:bg-primary-100 transition-all duration-200 font-bold focus:outline-none z-20"
+              aria-label="Fermer le menu mobile"
+            >
+              ×
+            </button>
             <div className="container mx-auto px-4 py-4 flex-1 flex flex-col justify-center">
               <div className="flex flex-col space-y-4">
                 {/* Liens de navigation mobile */}
