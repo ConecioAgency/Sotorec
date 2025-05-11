@@ -81,7 +81,7 @@ export default function Footer() {
         </button>
       </div>
       <div className="mt-4 text-center text-xs text-gray-500">
-        Site créé par<a 
+        Site créé par <a 
           href="https://www.conecio.com" 
           target="_blank" 
           rel="noopener noreferrer" 
