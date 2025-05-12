@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
       {/* Barre du bas */}
       <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-        {/* <div>&copy; {new Date().getFullYear()} Sotorec. Tous droits réservés.</div> */}
+        <div>&copy; {new Date().getFullYear()} Sotorec. Tous droits réservés.</div>
         <div className="flex items-center gap-4">
           <span>Français</span>
           <Link href="#contact" className="hover:text-orange-400 transition">Contact</Link>

@@ -27,7 +27,7 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-black text-white">
+      <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
         {/* Vidéo de fond */}
         <video
           autoPlay
